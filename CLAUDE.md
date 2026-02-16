@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Public website for the Swedish section of World Kido Federation (svenskhapkido.se). The site promotes Hapkido martial arts, links to all Swedish member clubs, and showcases promotional material. See `PRD.md` for full requirements.
+Public website for the Swedish section of World Kido Federation (hapkidosweden.se). The site promotes Hapkido martial arts, links to all Swedish member clubs, and showcases promotional material. See `PRD.md` for full requirements.
 
 ## Tech Stack
 
@@ -13,14 +13,20 @@ Public website for the Swedish section of World Kido Federation (svenskhapkido.s
 - **Fonts**: Google Fonts (Inter for body text, Noto Sans KR for Korean characters)
 - **No build process**: Files are served directly without compilation
 
-## Development
+## Development Workflow
 
-Open `index.html` directly in a browser to preview the site. No local server or build step required.
+- **`index.html`** is the live published landing page. **Never modify it** unless explicitly told to.
+- **`index_wip_N.html`** (e.g. `index_wip_1.html`) are working files for changes under review. All development happens here.
+- WIP pages are not linked from `index.html` — they are only reachable by direct URL for sharing with reviewers.
+- Once a WIP page is approved, it replaces `index.html`.
+- If multiple WIP versions are needed, increment the number (`index_wip_2.html`, etc.).
+- Use Chrome DevTools MCP to verify pages and debug problems both locally and on the published URL.
+- Open HTML files directly in a browser to preview. No local server or build step required.
 
 ## File Structure
 
-- `index.html` - Main website (current working version)
-- `webpage-mockup_1.html` - Earlier mockup version (committed to git)
+- `index.html` - Live published landing page (do not edit without explicit instruction)
+- `index_wip_1.html` - Current working file
 
 ## Design Conventions
 

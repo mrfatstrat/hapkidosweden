@@ -3,7 +3,7 @@
 ## Overview
 
 **Project**: Public website for the Swedish section of World Kido Federation
-**Domain**: svenskhapkido.se
+**Domain**: hapkidosweden.se
 **Purpose**: Common landing site for all Swedish member clubs to promote Hapkido and attract new members
 
 ## Goals
